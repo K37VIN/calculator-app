@@ -1,12 +1,16 @@
 from calc_func import do_add,do_sub
-
+from area import calculate_area_rect
+from multiply import do_mul
 def main():
     print("Welcome to the Calculator app")
     print("""
           \nSelect the Function from the given options:
           1.Add
           2.Subtract
-          """)
+          3.Multiply
+          4.Area        
+          
+            """)
     
     user_input=input("Select the funtion:")
     a=int(input("Enter the first number:"))
@@ -16,6 +20,10 @@ def main():
         result= do_add(a,b)
     elif user_input == "2":
         result =do_sub(a,b) 
+    elif user_input == "3":
+        result = do_mul(a,b)    
+    elif user_input == "4":
+        result = calculate_area_rect(a,b)    
 
 
     print("Result:",result)
