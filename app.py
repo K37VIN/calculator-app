@@ -7,6 +7,7 @@ def main():
           1.Add
           2.Subtract
           3.Multiply 
+          4.Division
           """)
     
     user_input=input("Select the funtion:")
